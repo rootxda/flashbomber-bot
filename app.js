@@ -56,17 +56,13 @@ var burp0_options = {
 
 }
 
-app.get('/bomb', (req, res) => {
+app.get('/bob', (req, res) => {
 
    
 
-  request(burp0_options, function (error, response, body) {
-    if (error) {
-      res.send({ error });
-    } else {
-      res.send({ body });
-    }
-  });
+  
+      res.send("live");
+   
 });
 
 
